@@ -1,0 +1,19 @@
+[user]
+	name = William Kurosawa
+	email = wkurosawa@gmail.com
+[core]
+	excludesfile = /Users/wk_air/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Users/wk_air/Library/Application Support/SourceTree/SourceTree 1.9.3.1/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[color]
+	ui = true
+[alias]
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	st = status
+	co = checkout
+[push]
+	default = matching
